@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
+/* Using Mobile First Approach */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* css resets */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 :root {
   --Red: hsl(0, 78%, 62%);
@@ -14,112 +18,143 @@
   --Very-Dark-Blue: hsl(234, 12%, 34%);
   --Grayish-Blue: hsl(229, 6%, 66%);
   --Very-Light-Gray: hsl(0, 0%, 98%);
+  --mobile-width: 25rem;
+  --desktop-width: 70rem;
+  --desktop-header-width: 30rem;
 }
 
 body {
-  font-size: 0.8rem;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  line-height: 1.4;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.container {
-  padding: 1rem;
-  max-width: 80vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 95vh;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-size: 0.9735rem;
+  line-height: 1.5;
+  padding: 2rem 0;
 }
 
 header {
-  text-align: center;
-  color: var(--Very-Dark-Blue);
-  /* padding: 2rem 0rem; */
-  /* position: relative; */
-}
-
-header h1 {
-  padding: 1rem;
-}
-
-header h1 #special {
-  display: block;
-  font-weight: 100;
-}
-
-#box-section {
-  display: flex;
-  margin-top: 2rem;
-  height: 100%;
-}
-
-.side-box {
-  /* height: 50%; */
-  margin: 1rem;
-  padding: 12% 0;
-  /* background-color: chocolate; */
-  position: relative;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-
-.box {
-  padding: 1rem 1.5rem;
-  background-color: red;
-  /* margin: 1rem; */
-  flex: 1;
-  width: 20vw;
-  border-radius: 5px;
-}
-
-#center-boxes .box {
-  margin: 1rem;
-}
-
-#center-boxes:first-child {
-  border-top: var(--Red);
-}
-
-.s-box-1,
-.s-box-2 {
-  height: 50% !important;
-}
-
-.s-box-1 {
-  /* border-top: var(--Very-Light-Gray) ; */
-  border-top: var(--Very-Light-Gray) 4px solid;
-  background: #e2e2e2;
-}
-
-/* .s-box-2 {
-  position: absolute;
-  top: 0;
-  left: -50%;
-} */
-
-/* #box-section:first-child {
-  border-top: var(--red) solid 1rem;
-  background: #fff;
-} */
-
-.logo {
-  /* float: left; */
-  padding: 1rem;
-}
-
-.logo img {
-  display: block;
-  align-self: flex-end;
-}
-
-
-
-footer p {
+  align-items: center;
   text-align: center;
+  margin: 2rem 0;
+  max-width: var(--mobile-width);
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--Very-Dark-Blue);
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: var(--Very-Dark-Blue);
+}
+
+h3 {
+  margin: 1rem 0;
+  color: var(--Very-Dark-Blue);
+}
+
+header p {
+  margin: 1rem 0;
+}
+
+p {
+  color: var(--Grayish-Blue);
+}
+
+main {
+  padding: 0 1rem;
+  max-width: var(--mobile-width);
+}
+
+.box-container {
+  list-style: none;
+}
+
+.boxes {
+  margin: 2rem 0;
+  border-radius: 0.3rem;
+  padding: 2rem;
+  border-top: solid 0.29rem;
+  /* box-shadow: offset-x offset-y blur-radius color */
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.supervisor {
+  border-color: var(--Cyan);
+}
+
+.team-builder {
+  border-color: var(--Red);
+}
+.karma {
+  border-color: var(--Orange);
+}
+.calculator {
+  border-color: var(--Blue);
+}
+
+.boxes p:first-child {
+  margin: 1rem 0;
+}
+
+img {
+  display: block;
+  margin: 1rem 1rem 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+footer a {
+  color: var(--Very-Dark-Blue);
+}
+
+@media screen and (min-width: 769px) {
+  main {
+  max-width: var(--desktop-width);
+  padding: 0 2rem 1rem 2rem ;
+  }
+
+  header {
+    max-width: var(--desktop-header-width);
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-areas:
+      "superv  team calc"
+      "superv  karma calc";
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1.5rem;
+  }
+
+  .boxes {
+    margin: 0;
+  }
+
+  .supervisor {
+    grid-area: superv;
+  }
+  .team-builder {
+    grid-area: team;
+  }
+  .karma {
+    grid-area: karma;
+  }
+  .calculator {
+    grid-area: calc;
+  }
+
 }

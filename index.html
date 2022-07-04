@@ -4,66 +4,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Four card feature section</title>
+  <title>Engineer Hamziey | Four card feature section| Frontend Mentor</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
-  <main class="container">
-    <header>
-      <h1><span id="special">Reliable, efficient delivery</span>
-        Powered by Technology</h1>
-      <p>Our Artificial Intelligence powered tools use millions of data</p>
-      <p>points to ensure that your project is successful</p>
-    </header>
-    <section id="box-section">
-      <div class="side-box">
-        <div class="s-box-1 box">
-          <h2>Supervisor</h2>
-          <p>Monitors activities to identify your project roadblocks</p>
-          <div class="logo"><img src="./images/icon-supervisor.svg" alt=""></div>
-        </div>
-      </div>
-
-      <!-- center boxes starts here -->
-      <div id="center-boxes">
-        <div class="boxes box">
-          <h2>Team Builder</h2>
-          <p>Scans our talents network to create optimal team for your project</p>
-          <div class="logo"><img src="./images/icon-team-builder.svg" alt=""></div>
-        </div>
-        <div class="boxes box">
-          <h2>Karma</h2>
-          <p>Regularly evaluates our talents to ensure productivity</p>
-          <div class="logo"><img src="./images/icon-karma.svg" alt=""></div>
-        </div>
-      </div>
-      <!-- center boxes ends here -->
-
-      <div class="side-box">
-        <div class="s-box-2 box">
-          <h2>Calculator</h2>
-          <p>Uses data from past project to provide better delivery estimates</p>
-          <div class="logo"><img src="./images/icon-calculator.svg" alt=""></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-
-
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Lawal Hamzat Ademola AKA: Engineer Hamziey</a>.
+  <header>
+    <h1>Reliable, efficient delivery</h1>
+    <h2>Powered by Technology</h2>
+    <p>
+      Our Artificial Intelligence powered tools use millions of data points to ensure that your project is
+      successful
     </p>
+  </header>
+  <main class="container">
+    <ul class="box-container">
+      <li class="boxes supervisor">
+        <h3 class="page-title">Supervisor</h3>
+        <p>Monitors activities to identify your project roadblocks</p>
+        <!--
+          so that screen readers will ignore, the alt should be left empty
+          since this is just a simple decorative image and aria-hidden should be set to true 
+          Adding aria-hidden="true" to an element removes that element and 
+          all of its children from the accessibility tree. This 
+          can improve the experience for assistive technology(eg, screen readers)
+          users by...[MDN reference](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden)
+         -->
+        <img src="./images/icon-supervisor.svg" aria-hidden="true" alt="">
+      </li>
+      <li class="boxes team-builder">
+        <h3 class="page-title">Team Builder</h3>
+        <p>Scans our talents network to create optimal team for your project</p>
+        <img src="./images/icon-team-builder.svg" aria-hidden="true" alt="">
+      </li>
+      <li class="boxes karma">
+        <h3 class="page-title">Karma</h3>
+        <p>Regularly evaluates our talents to ensure productivity</p>
+        <img src="./images/icon-karma.svg" aria-hidden="true" alt="">
+      </li>
+      <li class="boxes calculator">
+        <h3 class="page-title">Calculator</h3>
+        <p>Uses data from past project to provide better delivery estimates</p>
+        <img src="./images/icon-calculator.svg" aria-hidden="true" alt="">
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <div class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+          href="https://www.linkedin.com/in/hamzat-lawal-a88404239">Lawal Hamat Ademola</a>. <a href="#">Code
+          Link</a>.
+      </p>
+    </div>
   </footer>
 </body>
 
