@@ -1,7 +1,7 @@
 
 main {
 max-width: var(--desktop-width);
-padding: 0 2rem 1rem 2rem ;
+padding: 0 2rem 0 2rem ;
 }
 
 header {
@@ -15,7 +15,7 @@ header {
     "superv  karma calc";
   justify-content: center;
   align-items: center;
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
 }
 
 .boxes {
