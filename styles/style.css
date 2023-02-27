@@ -25,6 +25,7 @@
 
 body {
   min-height: 100vh;
+  background-color: var(--Very-Light-Gray);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,4 +114,52 @@ footer {
 
 footer a {
   color: var(--Very-Dark-Blue);
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    max-width: var(--desktop-width);
+    padding: 0 2rem 0 2rem ;
+    }
+    
+    header {
+      max-width: var(--desktop-header-width);
+    }
+    
+    .box-container {
+      display: grid;
+      /* (The dots are how you leave a grid area empty in grid-template-areas) */
+      grid-template-areas:
+        ".  team ."
+        "superv  team calc"
+        "superv  karma calc"
+        ".  karma ."; 
+      justify-content: center;
+      align-items: center;
+      grid-gap: 1.8rem;
+    }
+    
+    .boxes {
+      margin: 0;
+    }
+    
+    .supervisor {
+      grid-area: superv;
+    }
+    .team-builder {
+      grid-area: team;
+    }
+    .karma {
+      grid-area: karma;
+    }
+    .calculator {
+      grid-area: calc;
+    }  
+}
+@media (min-width: 700px ) and (max-width: 900px ) {
+  .box-container {
+    grid-template-areas:
+      "superv team"
+      "calc  karma"; 
+  }
 }

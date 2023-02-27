@@ -40,8 +40,8 @@ Users should be able to:
 
 - LinkedLn Profile - [Lawal Hamzat Ademola](https://www.linkedin.com/in/hamzat-lawal-a88404239)
 - Frontend Mentor - [@EngineerHamziey](https://www.frontendmentor.io/profile/EngineerHamziey)
-- E-Mail- [engineerlawalhamzatademola@gmail.com](engineerlawalhamzatademola@gmail.com)
+- E-Mail- [mrlawalhamzat@gmail.com](mrlawalhamzat@gmail.com)
 
 
 ## Acknowledgments
-Thanks to [Frontend Mentor](https://www.Frontendmentor.io) for giving us the opportunitie to show our frontend skills, practice to become better and Meet other developers.
+Thanks to [Frontend Mentor](https://www.Frontendmentor.io) for giving us the opportunity to show our frontend skills, practice to become better and Meet other developers.
