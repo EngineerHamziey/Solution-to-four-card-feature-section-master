@@ -116,7 +116,7 @@ footer a {
   color: var(--Very-Dark-Blue);
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1101px) {
   main {
     max-width: var(--desktop-width);
     padding: 0 2rem 0 2rem ;
@@ -156,7 +156,8 @@ footer a {
       grid-area: calc;
     }  
 }
-@media (min-width: 700px ) and (max-width: 900px ) {
+
+@media (min-width: 700px ) and (max-width: 1100px ) {
   .box-container {
     grid-template-areas:
       "superv team"
